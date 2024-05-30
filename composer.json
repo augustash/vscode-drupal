@@ -1,6 +1,6 @@
 {
-  "name": "jacerider/vscode-drupal",
-  "description": "Module for  initial setup of Drupal based projects.",
+  "name": "augustash/vscode-drupal",
+  "description": "Provides initial setup of Drupal based projects.",
   "type": "library",
   "license": "proprietary",
   "require": {
