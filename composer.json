@@ -5,6 +5,7 @@
   "license": "proprietary",
   "require": {
     "drupal/core": "^10 || ^11",
+    "oomphinc/composer-installers-extender": "^1.1",
     "jacerider/vscode-extension-drupal": "^1"
   },
   "autoload": {
