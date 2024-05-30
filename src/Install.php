@@ -6,7 +6,7 @@ use Composer\Script\Event;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
- * Ddev console class.
+ * VS Code console class.
  */
 class Install {
 
