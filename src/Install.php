@@ -46,7 +46,6 @@ class Install {
       $gitignore = $fileSystem->exists($ignorePath) ? file_get_contents($ignorePath) : '';
       if (strpos($gitignore, '# Ignore Drupal vscode extensions') === FALSE) {
         $gitignore .= "\n" . file_get_contents(__DIR__ . '/../assets/.gitignore.append');
-        print $gitignore;
         $fileSystem->dumpFile($ignorePath, $gitignore);
       }
     }
