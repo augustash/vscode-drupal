@@ -1,0 +1,15 @@
+{
+  "name": "jacerider/vscode-drupal",
+  "description": "Module for  initial setup of Drupal based projects.",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "drupal/core": "^10 || ^11",
+    "jacerider/vscode-extension-drupal": "^1"
+  },
+  "autoload": {
+    "psr-4": {
+      "VscodeDrupal\\": "src/"
+    }
+  }
+}
