@@ -21,7 +21,16 @@ class Install {
     $io = $event->getIO();
 
     try {
-      $color = $io->ask('<info>Primary HEX color? (Default: #2780e3)</info>:' . "\n > #", '#2780e3');
+      $color = NULL;
+      foreach ($event->getArguments() as $arg) {
+        if (substr($arg, 0, 8) === '--color=') {
+          $color = substr($arg, 8);
+          break;
+        }
+      }
+      if ($color === NULL) {
+        $color = $io->ask('<info>Primary HEX color? (Default: #2780e3)</info>:' . "\n > #", '#2780e3');
+      }
       $color = '#' . preg_replace('/[^a-f0-9]/', '', $color);
 
       $settingsPath = './.vscode/settings.json';
